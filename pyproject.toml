@@ -26,5 +26,10 @@ Homepage = "https://github.com/namuan/clippy"
 where = ["."]
 include = ["clippy*"]
 
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.17.0",
+]
+
 [project.scripts]
 clippy = "clippy.main:main"

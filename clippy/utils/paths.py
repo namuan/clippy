@@ -1,7 +1,13 @@
+import sys
 import os
 
+def get_base_dir():
+    if getattr(sys, 'frozen', False):
+        return os.path.join(sys._MEIPASS, "clippy")
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Base directory is the parent of the 'utils' directory, which is 'clippy'
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = get_base_dir()
 
 DATA_FILE = os.path.join(BASE_DIR, "data", "pets_data.json")
 LIST_FILE = os.path.join(BASE_DIR, "data", "pets_list.json")
