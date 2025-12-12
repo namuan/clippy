@@ -1,0 +1,81 @@
+{
+    "clippy": {
+        "colors": [
+            "green",
+            "brown",
+            "yellow",
+            "black"
+        ],
+        "states": {
+            "green": {
+                "run": "media/clippy/green_run_8fps.gif",
+                "walk": "media/clippy/green_walk_8fps.gif",
+                "idle": "media/clippy/green_idle_8fps.gif",
+                "swipe": "media/clippy/green_swipe_8fps.gif",
+                "with_ball": "media/clippy/green_with_ball_8fps.gif",
+                "walk_fast": "media/clippy/green_walk_fast_8fps.gif"
+            },
+            "black": {
+                "walk": "media/clippy/black_walk_8fps.gif",
+                "swipe": "media/clippy/black_swipe_8fps.gif",
+                "idle": "media/clippy/black_idle_8fps.gif",
+                "run": "media/clippy/black_run_8fps.gif",
+                "with_ball": "media/clippy/black_with_ball_8fps.gif",
+                "walk_fast": "media/clippy/black_walk_fast_8fps.gif"
+            },
+            "brown": {
+                "walk_fast": "media/clippy/brown_walk_fast_8fps.gif",
+                "run": "media/clippy/brown_run_8fps.gif",
+                "with_ball": "media/clippy/brown_with_ball_8fps.gif",
+                "walk": "media/clippy/brown_walk_8fps.gif",
+                "swipe": "media/clippy/brown_swipe_8fps.gif",
+                "idle": "media/clippy/brown_idle_8fps.gif"
+            },
+            "yellow": {
+                "walk": "media/clippy/yellow_walk_8fps.gif",
+                "idle": "media/clippy/yellow_idle_8fps.gif",
+                "walk_fast": "media/clippy/yellow_walk_fast_8fps.gif",
+                "with_ball": "media/clippy/yellow_with_ball_8fps.gif",
+                "swipe": "media/clippy/yellow_swipe_8fps.gif",
+                "run": "media/clippy/yellow_run_8fps.gif"
+            }
+        },
+        "defaults": {
+            "idle": {
+                "hold": 8,
+                "movement_speed": 0,
+                "speed_animation": 0.5
+            },
+            "lie": {
+                "hold": 8,
+                "movement_speed": 0,
+                "speed_animation": 1.0
+            },
+            "swipe": {
+                "hold": 8,
+                "movement_speed": 0,
+                "speed_animation": 1.0
+            },
+            "walk": {
+                "hold": 24,
+                "movement_speed": 3,
+                "speed_animation": 1.0
+            },
+            "walk_fast": {
+                "hold": 40,
+                "movement_speed": 5,
+                "speed_animation": 1.5
+            },
+            "run": {
+                "hold": 56,
+                "movement_speed": 7,
+                "speed_animation": 2.0
+            },
+            "with_ball": {
+                "hold": 16,
+                "movement_speed": 0,
+                "speed_animation": 1.0
+            }
+        }
+    }
+}

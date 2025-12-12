@@ -1,0 +1,12 @@
+{
+    "pets": [
+        {
+            "species": "clippy",
+            "colors": [
+                "yellow"
+            ],
+            "enabled": true,
+            "size": "Original"
+        }
+    ]
+}

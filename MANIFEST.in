@@ -1,0 +1,3 @@
+recursive-include clippy/media *
+recursive-include clippy *.ico
+recursive-include clippy *.json

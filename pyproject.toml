@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clippy"
+version = "1.0.1"
+description = "Clippy for Mac"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Namuan" }
+]
+
+dependencies = [
+    "PyQt6",
+    "PyQt6-WebEngine",
+    "Pillow"
+]
+
+[project.urls]
+Homepage = "https://github.com/namuan/clippy"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["clippy*"]
+
+[project.scripts]
+clippy = "clippy.main:main"
