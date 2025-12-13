@@ -11,8 +11,8 @@ def convert_png_to_ico(source, target):
 
 if __name__ == "__main__":
     # Adjust paths as needed
-    source_file = "clippy/logo.png"
-    target_file = "clippy/logo.ico"
+    source_file = "assets/clippy-icon.png"
+    target_file = "assets/icon.ico"
     
     if os.path.exists(source_file):
         convert_png_to_ico(source_file, target_file)

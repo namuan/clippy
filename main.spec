@@ -9,8 +9,7 @@ a = Analysis(
     datas=[
         ('clippy/data', 'clippy/data'),
         ('clippy/media', 'clippy/media'),
-        ('clippy/logo.ico', 'clippy'),
-        ('clippy/logo.png', 'clippy'),
+        ('assets', 'assets'),
     ],
     hiddenimports=[],
     hookspath=[],
@@ -40,7 +39,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='clippy/logo.ico',
+    icon='assets/icon.ico',
 )
 coll = COLLECT(
     exe,
@@ -55,6 +54,6 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='Clippy.app',
-    icon='clippy/logo.ico',
+    icon='assets/icon.icns',
     bundle_identifier='com.namuan.clippy',
 )
